@@ -31,7 +31,7 @@ For the model finetuning grid search was applied to these hyperparameters:
 * **image_size**: Chosen size of image
 * **layers_fine_tune**: Layers to be unfrozen and fine tuned
 
-The best validation accuracy I got is *0.8125* with training accuracy of *0.78*. 
+The best validation accuracy I got is **0.8125** with training accuracy of **0.78** (execution **#212** in Valohai). 
 This model was obtained with learning rate equal to *0.001*, batch size of *128* sample, image with *(512x512)* size and *1* layer fine tuned.
 # Testing the model (predict.py)
 To test the performance of the model we run the model on images not included in training and validation datasets.
