@@ -32,7 +32,7 @@ For the model finetuning grid search was applied to these hyperparameters:
 * **layers_fine_tune**: Layers to be unfrozen and fine tuned
 
 The best validation accuracy I got is **0.8125** with training accuracy of **0.78** (execution **#17** in Valohai). 
-This model was obtained with learning rate equal to *0.001*, batch size of *128* sample, image with *(512x512)* size and *1* layer fine tuned.
+This model was obtained with learning rate equal to **0.001**, batch size of **128** sample, image with **(512x512)** size and *1* layer fine tuned.
 
 Plot of train/validation accuracy per epoch.
 <p align="center">
