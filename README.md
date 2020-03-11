@@ -33,6 +33,17 @@ For the model finetuning grid search was applied to these hyperparameters:
 
 The best validation accuracy I got is **0.8125** with training accuracy of **0.78** (execution **#17** in Valohai). 
 This model was obtained with learning rate equal to *0.001*, batch size of *128* sample, image with *(512x512)* size and *1* layer fine tuned.
+
+Plot of train/validation accuracy per epoch.
+<p align="center">
+  <img src="figures/task2_acc_train_val.png">
+</p>
+
+Plot of train/validation loss per epoch.
+<p align="center">
+  <img src="figures/task2_loss_train_val.png">
+</p>
+
 # Testing the model (predict.py)
 To test the performance of the model we run the model on images not included in training and validation datasets.
 ## Prediction on images
