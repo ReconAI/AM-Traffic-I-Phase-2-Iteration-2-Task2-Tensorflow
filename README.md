@@ -35,3 +35,27 @@ The best validation accuracy I got is **0.8125** with training accuracy of **0.7
 This model was obtained with learning rate equal to *0.001*, batch size of *128* sample, image with *(512x512)* size and *1* layer fine tuned.
 # Testing the model (predict.py)
 To test the performance of the model we run the model on images not included in training and validation datasets.
+## Prediction on images
+You can predict on images using *predict_images_tf.py* script:
+```sh
+python3 predict_images_tf.py --predictions road --model ./models/tensorflow/RoadCondi.h5 --input ./input --output ./output_road --labels ./road_labels.json
+```
+Where:
+* **'predictions'** argument: road (conditions to predict).
+* **'model'** argument: the path of the training model.
+* **'input'** argument: the path of your input images.
+* **'output'** argument: the path of the output images.
+* **'labels'** argument: the path of labels json file.
+
+## Prediction on video
+You can predict on video using *predict_video_tf.py* script:
+```sh
+python3 predict_video_tf.py --predictions road --model ./models/tensorflow/RoadCondi.h5 --input ./test_video.mp4 --labels ./road_labels.json --output ./output_road/road_conditions.avi --size 128
+```
+Where:
+* **'predictions'** argument: road (conditions to predict).
+* **'model'** argument: the path of the training model.
+* **'input'** argument: the path of your input vdeo (you have to mention the input video name).
+* **'output'** argument: the path of the output video (you have to mention the output video name).
+* **'labels'** argument: the path of labels json file.
+* **'size'** argument: size of queue for averaging (128 by default). Set the size to 1 if you  don't want to perform any averaging.
