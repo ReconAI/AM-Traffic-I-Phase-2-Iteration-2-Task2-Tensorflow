@@ -61,7 +61,7 @@ Where:
 ## Prediction on video
 You can predict on video using *predict_video_tf.py* script:
 ```sh
-python3 predict_video_tf.py --predictions road --model ./models/tensorflow/RoadCondi.h5 --input ./test_video.mp4 --labels ./road_labels.json --output ./output_road/road_conditions.avi --size 128
+python3 predict_video_tf.py --predictions road --model ./models/tensorflow/RoadCondi.h5 --input ./test_video.mp4 --labels ./road_labels.json --output ./output_road/road_conditions.avi --size 1
 ```
 Where:
 * **'predictions'**: road (conditions to predict).
