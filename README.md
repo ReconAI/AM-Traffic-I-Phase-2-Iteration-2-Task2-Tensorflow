@@ -62,7 +62,7 @@ You can make predictions on images following these steps:
      * **'input'**: the path of your input images.
      * **'output'**: the path of the output images.
      * **'labels'**: the path of labels json file.
-4. Check annotated images in /output_weather folder and network metrics in the terminal window.
+4. Check annotated images in /output_road folder and network metrics in the terminal window.
 
 ### Results
 The predictions are displayed on images as follows:
