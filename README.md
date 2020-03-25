@@ -50,11 +50,11 @@ Plot of train/validation loss per epoch.
 To test the performance of the model we run the model on images not included in training and validation datasets.
 ## Prediction on images
 You can make predictions on images following these steps:
-1. Download Road Evaluation Dataset.zip from [here](https://drive.google.com/open?id=1MDuIcb1pNqmTAYhkhY_5IegAgPL0dnkH) to the root folder and extract it in the *input* folder.
+1. Download *WeatherRoad_EvaluationDataset.zip* from [here](https://drive.google.com/open?id=1MDuIcb1pNqmTAYhkhY_5IegAgPL0dnkH) and extract it to the root folder.
 2. Download Model weights from [here] and put it in the *models* folder in the root folder.
 3. From the root folder execute:
    ```sh
-   python3 predict_images_tf.py --predictions road --model ./models/RoadCondi.h5 --input ./input --output ./output_road --labels ./road_labels.json
+   python3 predict_images_tf.py --predictions road --model ./models/RoadCondi.h5 --input ./WeatherRoad_EvaluationDataset/road --output ./output_road --labels ./road_labels.json
    ```
     Where:
      * **'predictions'**: road (conditions to predict).
