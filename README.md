@@ -49,16 +49,20 @@ Plot of train/validation loss per epoch.
 # Testing the model (predict.py)
 To test the performance of the model we run the model on images not included in training and validation datasets.
 ## Prediction on images
-You can predict on images using *predict_images_tf.py* script:
-```sh
-python3 predict_images_tf.py --predictions road --model ./models/tensorflow/RoadCondi.h5 --input ./input --output ./output_road --labels ./road_labels.json
-```
-Where:
-* **'predictions'**: road (conditions to predict).
-* **'model'**: the path of the training model.
-* **'input'**: the path of your input images.
-* **'output'**: the path of the output images.
-* **'labels'**: the path of labels json file.
+You can make predictions on images following these steps:
+1. Download Road Evaluation Dataset.zip from [here](https://drive.google.com/open?id=1MDuIcb1pNqmTAYhkhY_5IegAgPL0dnkH) to the root folder and extract it in the *input* folder.
+2. Download Model weights from [here] and put it in the *models* folder in the root folder.
+3. From the root folder execute:
+   ```sh
+   python3 predict_images_tf.py --predictions road --model ./models/RoadCondi.h5 --input ./input --output ./output_road --labels ./road_labels.json
+   ```
+    Where:
+     * **'predictions'**: road (conditions to predict).
+     * **'model'**: the path of the training model.
+     * **'input'**: the path of your input images.
+     * **'output'**: the path of the output images.
+     * **'labels'**: the path of labels json file.
+4. Check annotated images in /output_weather folder and network metrics in the terminal window.
 
 ### Results
 The predictions are displayed on images as follows:
