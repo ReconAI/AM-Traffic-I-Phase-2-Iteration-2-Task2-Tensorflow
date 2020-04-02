@@ -6,9 +6,6 @@ import argparse
 import time
 import json
 
-keras.backend.set_image_data_format("channels_first")
-
-
 def str2bool(v):
     if isinstance(v, bool):
        return v
