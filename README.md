@@ -21,10 +21,10 @@ The data was collected during task4. As described in task4, the images were down
  * Probably moist/salty (7)
  * Slushy (8)
  
- <p float="center">
-  <img src="figures/Slushy.jpg" width="150" />
-  <img src="figures/Dry.jpg" width="150" /> 
-  <img src="figures/ProbablyMoistSalty.jpg" width="150" />
+ <p align="center">
+  <img src="figures/Slushy.jpg" height="150" width="150" title="Slushy" />
+  <img src="figures/Dry.jpg" height="150" width="150" title="Dry" /> 
+  <img src="figures/ProbablyMoistSalty.jpg" height="150" width="150" title="Probably moist and salty" />
 </p>
  
 Unfortunately the labels are not accurate and have many mistakes and that’s due to different reasons such as the quality of the image, the distance between camera and weather station, sensors errors… so manually checking the labels was necessary. 
