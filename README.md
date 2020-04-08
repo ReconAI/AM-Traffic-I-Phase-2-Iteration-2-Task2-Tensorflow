@@ -10,7 +10,7 @@ As an input this model should take a video sequence from CCTV camera; As an outp
 The data was collected during task4. As described in task4, the images were downloaded in AWS S3 bucket and the labels are included in the images’s names whose format is as follows:<br/>
  *'camera-id'\_r'roadConditionCategory'\_w'weatherConditionCategory'\_'measuredTime'*<br/>
  eg. "C1255201_r7_w0_2020-01-29_21-00-39"<br/>
- The weather conditions to classify are:<br/>
+ The road conditions to classify are:<br/>
  * Dry (0)
  * Moist (1)
  * Wet (2)
