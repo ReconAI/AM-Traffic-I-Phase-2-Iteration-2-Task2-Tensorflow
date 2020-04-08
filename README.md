@@ -11,15 +11,15 @@ The data was collected during task4. As described in task4, the images were down
  *'camera-id'\_r'roadConditionCategory'\_w'weatherConditionCategory'\_'measuredTime'*<br/>
  eg. "C1255201_r7_w0_2020-01-29_21-00-39"<br/>
  The road conditions to classify are:<br/>
- * Dry (0): road condition is clear.
- * Moist (1): road seems not to be dry nor wet, and no water reflections.
- * Wet (2):  all road is wet and visible water reflections.
- * Wet & Salty (3): road is wet and there are traces of after snowfall.
- * Frost (4): Snow on road and you can find a special texture.
- * Snow (5): all road area or majority of it is covered by snow.
- * Ice (6): Visibile continues lines on snowy road.
- * Probably moist/salty (7): Same as moist condition but with traces after snowfall.
- * Slushy (8): road is covered in mud, like the Ice condition but when it's brown.
+ * **Dry (0)**: road condition is clear.
+ * **Moist (1)**: road seems not to be dry nor wet, and no water reflections.
+ * **Wet (2)**:  all road is wet and visible water reflections.
+ * **Wet & Salty (3)**: road is wet and there are traces of after snowfall.
+ * **Frost (4)**: Snow on road and you can find a special texture.
+ * **Snow (5)**: all road area or majority of it is covered by snow.
+ * **Ice (6)**: Visibile continues lines on snowy road.
+ * **Probably moist/salty (7)**: Same as moist condition but with traces after snowfall.
+ * **Slushy (8)**: road is covered in mud, like the Ice condition but when it's brown.
  
 <p align="center">
   <img src="figures/Slushy.jpg" height="250" width="250" title="Slushy"/>
@@ -39,7 +39,9 @@ The data was collected during task4. As described in task4, the images were down
   <img src="figures/Ice.jpg" height="250" width="250" title="Ice" />
 </p>
  
-Unfortunately the labels are not accurate and have many mistakes and that’s due to different reasons such as the quality of the image, the distance between camera and weather station, sensors errors… so manually checking the labels was necessary. 
+Unfortunately the labels are not accurate and have many mistakes and that’s due to different reasons such as the quality of the image, the distance between camera and weather station, sensors errors… so manually checking the labels was necessary.
+
+**PS**: The better the labeling get the better and more robust the model can be.
 # Training the model (train.py)
 The training was made using **1xGPU NVIDIA Tesla K80** (on Microsoft Azure NC6).
 
