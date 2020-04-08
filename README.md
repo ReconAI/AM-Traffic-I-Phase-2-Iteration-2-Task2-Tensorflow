@@ -21,6 +21,12 @@ The data was collected during task4. As described in task4, the images were down
  * Probably moist/salty (7)
  * Slushy (8)
  
+ <p float="left">
+  <img src="/Slushy.png" width="100" />
+  <img src="/Dry.png" width="100" /> 
+  <img src="/ProbablyMoistSalty.png" width="100" />
+</p>
+ 
 Unfortunately the labels are not accurate and have many mistakes and that’s due to different reasons such as the quality of the image, the distance between camera and weather station, sensors errors… so manually checking the labels was necessary. 
 # Training the model (train.py)
 The training was made using **1xGPU NVIDIA Tesla K80** (on Microsoft Azure NC6).
