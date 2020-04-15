@@ -4,6 +4,8 @@ Prepare and develop end-to-end pipeline (for a road condition classification lig
 
 As an input this model should take a video sequence from CCTV camera; As an output model should classify road condition (Dry, Moist, Wet, Wet & Salty, Frost, Snow, Ice, Probably moist/salty, Slushy).
 
+Detailed description can be found in **page3** in *'AM-Traffic I. Phase 2. Iteration 2 task4.pdf'* file.
+
 -------------------------------------------------------------------------------------------------------------------------------
 
 # Data
