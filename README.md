@@ -109,7 +109,11 @@ Predictions metrics calculated on the test dataset:
 </p>
 
 ## Prediction on video
-You can predict on video using *predict_video_tf.py* script:
+You can make predictions on video following these steps:
+1. Download the test video **test_video.mp4** from [here]() and put it in the root folder.
+2. Download Model weights from [here](https://drive.google.com/open?id=1LcW1wH_Pq99LD4IPMqow0DjVVFk-lPwn) and put it in the *models* folder in the root folder.
+3. In the root folder create the output directory **output_road**.
+4. From the root folder execute:
 ```sh
 python3 predict_video_tf.py --predictions road --model ./models/tensorflow/RoadCondi.h5 --input ./test_video.mp4 --labels ./road_labels.json --output ./output_road/road_conditions.avi --size 1
 ```
